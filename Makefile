@@ -46,7 +46,6 @@ endif
 all: elf
 
 elf: $(CXX_OBJS)
-	$(Q)$(CXX) -o bangnet main.cc $(CXX_OBJS)
 
 $(ALL_BUILD_DIRS): 
 	@ mkdir -p $@

@@ -64,6 +64,18 @@ public:
     return false;
   }
 
+  const unsigned char* data() const {
+    return mac_;
+  }
+
+  const unsigned char data(int i) const {
+    return mac_[i];
+  }
+
+  void set_data(int i, unsigned char val) {
+    mac_[i] = val;
+  }
+
   // Convert mac address to a printable string
   inline string ToString() {
     char tmp[32];

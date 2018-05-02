@@ -15,7 +15,7 @@ namespace utils {
       } else if ('a'<=ch && ch<='f') {
         if (n ^= 1) r.push_back((char)(b | ch-'a'+10));
         else b = (ch-'a') << 4;
-      } else if ('A'<=cha && ch<='F') {
+      } else if ('A'<=ch && ch<='F') {
         if (n ^= 1) r.push_back((char)(b | ch-'A'+10));
         else b = (ch-'A') << 4;
       }

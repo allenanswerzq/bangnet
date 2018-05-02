@@ -18,8 +18,8 @@ public:
   const MacAddress& mac() const { return mac_; }
 
   // Returns device's name
-  string device_name(const char *dev) {
-    return string(dev);
+  string device_name() {
+    return string(dev_);
   }
 
   // Packets sent by an OS to user-space program which attaches itself
@@ -37,6 +37,9 @@ public:
   void close();
 
   bool AddIP(const InetAddress& ip);
+
+bool remove_ip(const char *dev_, set<InetAddress>& ips_, 
+               const InetAddress& ip);
 
   bool RemoveIP(const InetAddress& ip);
 
