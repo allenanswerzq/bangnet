@@ -2,6 +2,7 @@
 #define BANGNET_COMMON_H_
 
 #include <glog/logging.h>
+#include <gtest/gtest.h>
 
 #include <map>
 #include <set>
